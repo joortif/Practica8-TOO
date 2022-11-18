@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
-// asociada con un ensamblado.
-[assembly: AssemblyTitle("Form2")]
+// asociada a un ensamblado.
+[assembly: AssemblyTitle("BotonesNumerados")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Form2")]
+[assembly: AssemblyProduct("BotonesNumerados")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("37252c9b-8d2f-411a-bc15-694ea9e787ab")]
+[assembly: Guid("cd8cc648-0f13-42a1-8b5f-8794df95bd61")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

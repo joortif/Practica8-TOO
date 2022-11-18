@@ -48,11 +48,13 @@ namespace Biblioteca
             {
                 if (base.ReadOnly != value)
                 {
-                    this.BackColor = Color.FromKnownColor(KnownColor.Red);
-                }
-                else
-                {
-                    this.BackColor = Color.FromKnownColor(KnownColor.Window);
+                    if (value)
+                    {
+                        this.BackColor = Color.FromKnownColor(KnownColor.Red);
+                    } else
+                    {
+                        this.BackColor = Color.FromKnownColor(KnownColor.Window);
+                    }
                 }
                 base.ReadOnly = value;
             }
