@@ -15,6 +15,7 @@ namespace Form1
         public Form1()
         {
             InitializeComponent();
+            BotonesNumerados bn = new BotonesNumerados(5);
         }
 
         private void btMultilinea_Click(object sender, EventArgs e)
@@ -26,5 +27,9 @@ namespace Form1
             
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

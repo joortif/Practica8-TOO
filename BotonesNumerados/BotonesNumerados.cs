@@ -12,17 +12,10 @@ namespace BotonesNumerados
 {
     public partial class BotonesNumerados: UserControl
     {
+        private int n;
         public BotonesNumerados()
         {
             InitializeComponent();
-        }
-
-        private void Boton_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Se ha pulsado el " + (sender as Button).Text, "Aviso");
-        }
-        private void BotonesNumerados_Layout(object sender, LayoutEventArgs e)
-        {
             Button bt1 = new Button();
             bt1.Location = new Point(240, 87);
             bt1.Text = "1";
@@ -50,7 +43,7 @@ namespace BotonesNumerados
 
             Button bt4 = new Button();
             bt4.Location = new Point(240, 160);
-            bt4.Text="4";
+            bt4.Text = "4";
             bt4.Height = 75;
             bt4.Width = 67;
             bt4.Click += new EventHandler(Boton_Click);
@@ -95,6 +88,38 @@ namespace BotonesNumerados
             bt9.Width = 67;
             bt9.Click += new EventHandler(Boton_Click);
             this.Controls.Add(bt9);
+
+
+        }
+
+        public int N
+        {
+            get { return n; }
+        }
+
+        public BotonesNumerados(int n)
+        {
+            InitializeComponent();
+            this.n = n;
+            int x = 0;
+            int y = 0;
+            
+            for (int i=0;i < n; i++)
+            {
+                for (int j=0; j<n; j++)
+                {
+                    Button b = new Button();
+                    b.Text = "Boton" + i;
+                    b.Size = new Size(20, 20);
+                    b.Name = "bt" + i;
+             
+                }
+            }
+        }
+
+        private void Boton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha pulsado el " + (sender as Button).Text, "Aviso");
         }
     }
 }
